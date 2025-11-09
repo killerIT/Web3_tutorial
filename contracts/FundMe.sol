@@ -14,7 +14,7 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 contract FundMe {
   mapping (address => uint256) public  fundersAmount;
   uint256 constant MININUM_VALUE = 100 * 10 * 18; // USD
-  AggregatorV3Interface internal dataFeed;
+  AggregatorV3Interface public dataFeed;
 
   uint256 constant TARGET = 100 * 10 * 18; // USD
 
